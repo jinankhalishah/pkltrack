@@ -34,11 +34,11 @@
                     <input type="email" class="form-control" name="email" value="{{$admin->email}}" placeholder="Input Email">
                   </div>
                   <div class="form-group">
-                    <label>No HP</label>
+                    <label>No Handphone</label>
                     <input type="text" class="form-control" name="no_hp"    value="{{$admin->no_hp}}" placeholder="Input No HP">
                   </div>
                   <div class="form-group">
-                    <label>Username</label>
+                    <label>Nama Lengkap</label>
                     <input type="text" class="form-control" name="username"  value="{{$admin->username}}" placeholder="Input Username">
                   </div>
                   <div class="form-group">

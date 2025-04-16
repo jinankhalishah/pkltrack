@@ -37,7 +37,7 @@
         @endif
 
         <div class="input-group mb-3">
-          <input type="Username" class="form-control" name="Username" placeholder="Username">
+          <input type="email" class="form-control" name="email" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -68,10 +68,10 @@
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="{{asset('template/plugins/jquery/jquery.min.js"></script>
+<script src="{{asset('template/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
-<script src="{{asset('template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('template/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{asset('template/dist/js/adminlte.min.js"></script>
+<script src="{{asset('template/dist/js/adminlte.min.js')}}"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@
               </ul>
               @endif
 
-              <form action="{{ route('prosesregister') }}" method="post">
+              <form action="{{ route('prosesregister') }}" method="POST">
                 <div class="card-body">
                   @csrf
                   <div class="form-group">
@@ -35,8 +35,8 @@
                     <input type="text" class="form-control" name="no_hp"  placeholder="Input No HP">
                   </div>
                   <div class="form-group">
-                    <label>Username</label>
-                    <input type="text" class="form-control" name="username"  placeholder="Input Username">
+                    <label>Nama Lengkap</label>
+                    <input type="text" class="form-control" name="username"  placeholder="Input Name">
                   </div>
                   <div class="form-group">
                     <label for="password">Password</label>
@@ -47,6 +47,7 @@
                     <input type="password" class="form-control" name="password_confirmation"  placeholder="Konfirmasi Password" required>
                   </div>
                 </div>
+                <!-- /.card-body -->
 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Daftar</button>
@@ -71,7 +72,7 @@
                           <th>Id</th>
                           <th>Email</th>
                           <th>No Handphone</th>
-                          <th>Username</th>
+                          <th>Nama Lengkap</th>
                           <th>Aksi</th>
                         </tr>
                     </thead>
@@ -82,12 +83,13 @@
                         <td style="">{{ $admin -> email }}</td>
                         <td style="">{{ $admin -> no_hp }}</td>
                         <td style="">{{ $admin -> username }}</td>
-                        <td><a href="{{route('adminedit',$admin->id) }}">Edit</a>
+                        <td>
+                            <a href="{{ route('adminedit', $admin->id) }}" class="btn btn-outline-primary btn-sm">Edit</a>
                             <form action="{{route('admindelete',$admin->id)}}" method="post"
                               style="display: inline;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" onclick="return confirm('Yakin Ingin Menghapus Data Ini?')">Hapus</button>
+                            <button type="submit" class="btn btn-outline-primary btn-sm" onclick="return confirm('Yakin Ingin Menghapus Data Ini?')">Hapus</button>
                             </form>
                             </td>
                         </tr>
@@ -100,4 +102,3 @@
 
 
 @endsection
-

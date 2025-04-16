@@ -237,19 +237,19 @@
           <a href="{{route('formregister')}}" class="nav-link">
             <i class="nav-icon fas fa-th"></i>
             <p>
-              Form Register
+               Admin
             </p>
           </a>
       </li>
-      {{-- <li class="nav-item">
-        <a href="{{route('datagempa')}}" class="nav-link">
+      <li class="nav-item">
+        <a href="{{route('formregisterpembimbing')}}" class="nav-link">
           <i class="nav-icon fas fa-th"></i>
           <p>
-            Data Gempa JSON
+            Pembimbing
           </p>
         </a>
     </li>
-    <li class="nav-item menu-open">
+    {{--<li class="nav-item menu-open">
         <a href="#" class="nav-link active">
           <i class="nav-icon fas fa-book"></i>
           <p>

@@ -13,10 +13,7 @@ return new class extends Migration
     {
         Schema::create('data_admin', function (Blueprint $table) {
             $table->id();
-            $table->string('email')-> unique();
-            $table->string('no_hp');
-            $table->string('username');
-            $table->string('password');
+            $table->timestamps();
         });
     }
 
